@@ -1,5 +1,5 @@
 import streamlit as st
-
+from data import data
 def analyze_post(text):
     lower_text = text.lower()
     risk = "Low"
@@ -39,3 +39,4 @@ if st.button("🚨 تحلیل کن"):
         st.json(result)
     else:
         st.warning("لطفاً متنی وارد کنید.")
+
